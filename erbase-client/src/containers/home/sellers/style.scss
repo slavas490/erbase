@@ -1,0 +1,92 @@
+.seller-card {
+    .modal-body > *:nth-child(n+2) {
+        margin-top: 15px;
+    }
+
+    .object-id {
+        display: flex;
+        align-items: center;
+
+        .id {
+            background-color: rgb(4,161,192);
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 5px 15px;
+            border-radius: 3px;        
+        }
+
+        .address {
+            margin-left: 10px;
+            color: #1bbd1b;
+            font-size: 13px;
+            font-weight: bold;
+        }
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+
+        .block {
+            .title {
+                margin: 15px 0;
+            }
+
+            .two-side {
+                display: flex;
+
+                & > *:nth-child(n+2) {
+                    margin-left: 5px;
+                }
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+        }
+    }
+
+    .photo-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -5px;
+
+        & > div {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-position-x: 50%;
+            background-position-y: center;
+        }
+    }
+
+    .layoutImg {
+        width: 200px;
+        height: 150px;
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+
+    .realtorLogo {
+        width: 200px;
+        height: 80px;
+        background-size: contain;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        filter: invert(60%);
+    }
+}
+
+#mailPreview {
+    width: 100%;
+    min-height: 800px;
+    border: 1px solid #becad6;
+    border-radius: .35rem;
+}

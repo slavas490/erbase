@@ -1,0 +1,28 @@
+@media (min-width: 1600px) {
+    .entrance {
+        .logo {
+            img {
+                max-width: 295px;
+            }
+            
+            & > div {
+                h1 {
+                    font-size: 72px;
+                }
+
+                & > div:nth-child(n+2) {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .entrance {
+            .form {
+                .info-text {
+                    font-size: 14px;
+                    width: 370px;
+                }
+            }
+        }
+    }
+}

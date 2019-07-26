@@ -1,0 +1,170 @@
+@import "./vars.scss";
+
+.home {
+    flex-grow: 1;
+
+    .menu {
+        a {
+            display: inline-block;
+            text-decoration: none!important;
+
+            &:first-child {
+                border-bottom-left-radius: 0!important;
+            }
+
+            &:last-child {
+                border-bottom-right-radius: 0!important;
+            }
+        }
+    }
+
+    .container {
+        border-radius: 0 .35rem .35rem .35rem;
+        border: none;
+        margin: -1px 0 0 0;
+        padding: $inner-paddings;
+        background-color: #fff;
+        box-shadow: $box-shadow;
+        
+        .row {
+            &>* {
+                margin: 10px 0;
+            }
+        }
+    }
+
+    .table-state > div > div {
+        width: 20px;
+        height: 12px;
+        border: 1px solid $border-color;
+        display: inline-block;
+    }
+
+    .notes {
+        .list {
+            display: flex;
+            margin: 0 -10px;
+            flex-wrap: wrap;
+
+            & > div {
+                width: 200px;
+                height: 150px;
+                border: 1px solid #dee2e6;
+                display: inline-block;
+                margin: 10px;
+                border-radius: .35rem;
+                box-shadow: 0 2px 0 rgba(90, 97, 105, 0.11), 0 4px 8px rgba(90, 97, 105, 0.12), 0 10px 10px rgba(90, 97, 105, 0.06), 0 7px 70px rgba(90, 97, 105, 0.1);
+
+                .control {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: 0 5px;
+                    height: 25px;
+
+                    .delete {
+                        font-size: 16px;
+                    }
+
+                    & > * {
+                        padding: 0 5px;
+                        cursor: pointer;
+                        color: #707070;
+
+                        &:hover {
+                            color: #000000;
+                        }
+                    }
+                }
+
+                .value {
+                    height: calc(100% - 25px);
+
+                    textarea {
+                        height: calc(100% - 20px);
+                        width: calc(100% - 20px);
+                        padding: 10px;
+                        border-right: none;
+                        border-left: none;
+                        border-top: 1px solid #dee2e6;
+                        margin: 0px;
+                        outline: none;
+                        resize: none;
+                        border-radius: 0 0 .35rem .35rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .profile {
+        display: flex;
+        justify-content: space-between;
+
+        .div-title {
+            font-weight: bold;
+        }
+
+        .content {
+            display: block;
+            margin: 20px 0 0 0;
+            padding: 0;
+
+            form {
+                label {
+                    flex-direction: column;
+                }
+            }
+
+            label {
+                display: flex;
+
+                .title {
+                    width: 250px;
+                }
+            }
+        }
+    }
+
+    .deals {
+        .small-text {
+            font-size: 12px;
+        }
+
+        .agencyInfo {
+            font-size: 12px;
+            border: 1px solid #ffc00f;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #fffbf0;
+        }
+    }
+
+    .seller-address {
+        position: relative;
+        bottom: -20px;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .image-gallery-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        
+        img {
+            width: initial!important;
+            max-height: 100vh;
+            max-width: 100vw;
+        }
+    }
+
+    .table {
+        .seller-short-info {
+            display: block;
+            overflow: hidden;
+            max-height: 70px;
+        }
+    }
+}
